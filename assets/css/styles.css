@@ -1,0 +1,11 @@
+* {
+    background-color:darkgrey;
+}
+
+.hero-image {
+    background-image: url("./assets/images/Background-image.jpg");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+   
+}
