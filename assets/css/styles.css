@@ -1,11 +1,110 @@
 * {
-    background-color:darkgrey;
+    color:white;
 }
 
-.hero-image {
-    background-image: url("./assets/images/Background-image.jpg");
-    background-size:cover;
-    background-position:center;
-    height:300px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:grey;
+    margin:0;
    
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(0, 51, 102);
+    margin:0;
+    
+}
+
+
+header h1 {
+    font-weight: bold;
+    font-size:36px;
+    border-bottom:none;
+}
+
+header nav {
+    width:40%
+}
+
+header nav ul {
+    font-weight:bold;
+    list-style: none;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header nav ul li  {
+    font-size:25px;
+    
+   
+    
+}
+
+
+
+.flex-hero {
+    background-image: url("../images/hero-image.jpg");
+    background-size:100% 100%;
+    background-position:center;
+    height:600px;
+    width:100%;
+    position:relative;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    
+}
+
+.hero-sub {
+    font-size:25px;
+    align-self:flex-end;
+    
+    
+}
+
+
+.Profile-img {
+    background-image: url("../images/Profile Picture of me.jpg");
+    background-position:center;
+    flex-basis:30%
+    
+}
+
+.info {
+    display:flex;
+    justify-content:space-between;
+    
+
+}
+
+.info .info-head{
+    
+    
+
+}
+
+.head {
+    font-size:25px;
+    padding:20px;
+    border-right:solid rgb(0, 51, 102) 5px;
+    margin:30px;
+}
+
+.info p {
+    font-size:25px;
+    padding:10px;
+    
+
+}
+
+
+
+.work-img {
+    height:300px;
+    width:300px;
+    border:solid rgb(0, 51, 102) 5px;
 }
