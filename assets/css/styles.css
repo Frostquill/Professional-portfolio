@@ -8,7 +8,7 @@ body{
     margin:0;
    
 }
-
+/* header */
 header {
     display:flex;
     justify-content:space-between;
@@ -45,7 +45,7 @@ header nav ul li  {
 }
 
 
-
+/* hero */
 .flex-hero {
     background-image: url("../images/hero-image.jpg");
     background-size:100% 100%;
@@ -69,42 +69,156 @@ header nav ul li  {
 
 .Profile-img {
     background-image: url("../images/Profile Picture of me.jpg");
-    background-position:center;
-    flex-basis:30%
+    background-position:left;
+    flex-basis:30%;
+    background-repeat:no-repeat;
     
 }
 
+/* Hero */
+
+/* About Me Section */
 .info {
     display:flex;
+    flex:wrap;
     justify-content:space-between;
     
-
 }
 
-.info .info-head{
-    
-    
 
-}
-
-.head {
+.info-head {
     font-size:25px;
-    padding:20px;
+    padding: 20px;
     border-right:solid rgb(0, 51, 102) 5px;
-    margin:30px;
+    margin:5%  7%;
+    align-self:stretch;
+
 }
 
-.info p {
+.info-p {
     font-size:25px;
-    padding:10px;
+    padding:5% 0;
     
 
 }
 
+/* Work Section */
 
+.Work {
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:row;
+    margin-left:50px;
+    padding:0px;
+}
 
-.work-img {
-    height:300px;
-    width:300px;
+.work-head {
+    font-size:25px;
+    align-self:stretch;
+    border-right:solid rgb(0, 51, 102) 5px;
+    margin:0 5%;
+    padding:20px; 
+    
+}
+
+/* images for work */
+.work-img-flex {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width: 60%;
+    height:1200px;
+    margin:0 2.1%;
+    padding:0 20px;
+}
+
+.work-text {
+    font-size:25px;
+    font:bold;
+    position:relative;
+    bottom:80px;
+    left:10px;
+}
+
+/* Run Buddy */
+
+.run-buddy {
+    flex:100%;
+    align-self:center;
+}
+
+.run-buddy-img {
+    width:100%;
+    height:500px;
+    object-fit:fill;
     border:solid rgb(0, 51, 102) 5px;
 }
+
+
+
+/* Horiseon */
+.horiseon {
+    flex:40%;
+    padding:5px;
+    margin:0 5px;
+}
+
+.horiseon-img {
+    width: 100%;
+    height:200px;
+    object-fit:fill;
+    border:solid rgb(0, 51, 102) 5px;
+    
+}
+
+/* PL1 */
+
+.pl1 {
+    flex:40%;
+    padding:5px;
+    margin:0 5px
+}
+
+.pl1-img {
+    width:100%;
+    height:200px;
+    object-fit:fill;
+    border:solid rgb(0, 51, 102) 5px;
+}
+
+
+
+/* PL2 */
+
+.pl2 {
+    flex:40%;
+    padding:5px;
+    margin:0 5px;
+}
+.pl2-img {
+    width:100%;
+    height:200px;
+    object-fit:fill;
+    border:solid rgb(0, 51, 102) 5px;
+
+}
+
+/* PL3 */
+
+.pl3 {
+    flex:40%;
+    padding:5px;
+    margin:0 5px;
+}
+.pl3-img {
+    width:100%;
+    height:200px;
+    object-fit:fill;
+    border:solid rgb(0, 51, 102) 5px;
+
+}
+
+
+
+
+
