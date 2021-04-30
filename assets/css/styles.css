@@ -6,6 +6,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background-color:grey;
     margin:0;
+    
    
 }
 /* header */
@@ -18,10 +19,11 @@ header {
 }
 
 
-header h1 {
+header h1 a {
     font-weight: bold;
     font-size:36px;
     border-bottom:none;
+    text-decoration:none;
 }
 
 header nav {
@@ -39,9 +41,23 @@ header nav ul {
 
 header nav ul li  {
     font-size:25px;
-    
    
-    
+}
+
+.button {
+    background-color:rgb(0, 51, 102);
+   
+    border-radius:15px;
+    padding: 7px;
+    transition-duration:.10s;
+    text-decoration:none;
+}
+.button:hover {
+    background-color:rgba(255,0,0,1);
+    padding:10px;
+    border-radius:15px;
+    font-size:25px;
+
 }
 
 
@@ -75,7 +91,7 @@ header nav ul li  {
     
 }
 
-/* Hero */
+/*  end Hero */
 
 /* About Me Section */
 .info {
@@ -101,6 +117,7 @@ header nav ul li  {
     
 
 }
+/* About Me End */
 
 /* Work Section */
 
@@ -116,9 +133,8 @@ header nav ul li  {
     font-size:25px;
     align-self:stretch;
     border-right:solid rgb(0, 51, 102) 5px;
-    margin:0 5%;
+    margin:0 0 0 6.8%;
     padding:20px; 
-    
 }
 
 /* images for work */
@@ -126,50 +142,40 @@ header nav ul li  {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    width: 60%;
+    width: 100%;
     height:1200px;
     margin:0 2.1%;
     padding:0 20px;
 }
 
 .work-text {
-    font-size:25px;
+    font-size:20px;
     font:bold;
     position:relative;
-    bottom:80px;
+    bottom:90px;
     left:5px;
     background-color:rgb(0, 51, 102);
     background-color:20px;
     width:12%
 }
-
-.sub-text {
-    width:20%;
-}
-/* Run Buddy */
-
-.run-buddy {
-    flex:100%;
-    align-self:center;
-}
-
-.run-buddy-img {
-    width:100%;
-    height:500px;
-    object-fit:fill;
-    border:solid rgb(0, 51, 102) 5px;
+.work-text-run {
+    font-size:25px;
+    font:bold;
+    position:relative;
+    bottom:100px;
+    left:25.2%;
+    background-color:rgb(0, 51, 102);
+    width:8%
 }
 
-
-
-/* Horiseon */
-.horiseon {
+.img-box {
     flex:40%;
     padding:5px;
     margin:0 5px;
 }
 
-.horiseon-img {
+
+.img {
     width: 100%;
     height:200px;
     object-fit:fill;
@@ -177,52 +183,27 @@ header nav ul li  {
     
 }
 
-/* PL1 */
 
-.pl1 {
-    flex:40%;
-    padding:5px;
-    margin:0 5px
+/* Run Buddy */
+
+.run-buddy {
+    flex:100%;
+    align-self:center;
+    
 }
 
-.pl1-img {
-    width:100%;
-    height:200px;
+.run-buddy-img {
+    width:50%;
+    height:500px;
     object-fit:fill;
     border:solid rgb(0, 51, 102) 5px;
+    margin:0 25%;
+    
 }
 
+/* Work End */
 
 
-/* PL2 */
-
-.pl2 {
-    flex:40%;
-    padding:5px;
-    margin:0 5px;
-}
-.pl2-img {
-    width:100%;
-    height:200px;
-    object-fit:fill;
-    border:solid rgb(0, 51, 102) 5px;
-
-}
-
-/* PL3 */
-
-.pl3 {
-    flex:40%;
-    padding:5px;
-    margin:0 5px;
-}
-.pl3-img {
-    width:100%;
-    height:200px;
-    object-fit:fill;
-    border:solid rgb(0, 51, 102) 5px;
-
-}
 
 /* footer */
 
@@ -239,14 +220,92 @@ background-color:rgb(0, 51, 102);
 }
 
 .footer-info h2{
-font-size:25px;
+font-size:30px;
 
 }
 
 .footer-contact {
-height:20px;
+height:30px;
 width:5%;
+font-size:25px;
+}
+
+.footer-contact:hover{
+    color:red;
+    
+
+}
+
+/* Footer End */
+
+
+@media screen and (max-width:980px) {
+header {
+    padding-bottom:0;
+    justify-content:center;
+    position:relative;
+    width:100%;
+
+}
+
+header h1 {
+    width:40%;
+    text-align:center;
+
+}
+
+header nav ul {
+    margin-top:20px;
+    width:100%;
+    justify-content:center;
+}
+
+header nav ul li a {
+    font-size:20px;
+
+}
+
+.footer-info {
+    width:20%;
+    
+}
+
+.footer-contact {
+    width:20%;
 }
 
 
 
+
+
+.hero-sub {
+    text-align:center;
+    align-self:flex-start;
+    width:50%;
+}
+
+
+ .Profile-img {
+    
+    flex-basis:100%
+
+}
+
+
+.work-head {
+ margin:0 3.5%;
+}
+
+
+.work-img-flex {
+    flex: 0 70%;
+}
+
+.work-text-run, .work-text{
+    font-size:15px;
+   
+
+}
+
+
+}
