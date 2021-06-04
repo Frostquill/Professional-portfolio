@@ -159,6 +159,16 @@ header nav ul li  {
     background-color:20px;
     width:20%
 }
+
+.work-text-one {
+    font-size:20px;
+    font:bold;
+    position:relative;
+    bottom:70px;
+    left:5px;
+    width:25%;
+    color:black;
+}
 .work-text-run {
     font-size:25px;
     font:bold;
